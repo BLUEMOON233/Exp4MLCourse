@@ -99,5 +99,4 @@ venv.bak/
 
 # Project specific
 datasets/
-code/exp1/AdaIR/
 *.ckpt
