@@ -6,6 +6,7 @@
 
 ## 1. 实验一：AdaIR 基准与鲁棒性测试
 **目录**: `code/exp1`
+**模型权重**: [Google Drive 下载](https://drive.google.com/file/d/1ouweWECtch_pGtqgLy933bpT4xNf45KJ/view?usp=drive_link)
 
 ### 1.1 实验目的
 评估现有图像恢复模型（**AdaIR**）在面对常见图像腐蚀时的鲁棒性，并量化其对下游分类任务（使用 VGG16）准确率的影响。
@@ -36,6 +37,7 @@
 
 ## 2. 实验二：基于 Mamba 的特征增强
 **目录**: `code/exp2`
+**模型权重**: [Google Drive 下载](https://drive.google.com/file/d/1SdHGg5Hqj7GMYTWsIFmzBWi2qtcxv-ya/view?usp=drive_link)
 
 ### 2.1 实验目的
 提出一种计算高效的**特征级增强**模块，利用 **Mamba (State Space Models)** 的长距离建模能力，直接在分类器的特征层修复退化，作为全图像恢复的更高效替代方案。
@@ -66,6 +68,7 @@
 
 ## 3. 实验三：基于特征的图像重建 (Decoder)
 **目录**: `code/exp3`
+**模型权重**: [Google Drive 下载](https://drive.google.com/file/d/16somLoGmUEoGfBYSovSyYUw7zD9z7F-g/view?usp=drive_link)
 
 ### 3.1 实验目的
 验证 Exp2 中增强后的特征是否保留了足够的语义与空间细节。通过将特征重新解码为可视图像，定性与定量地分析特征增强的质量。
