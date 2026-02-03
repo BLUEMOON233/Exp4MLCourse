@@ -33,6 +33,9 @@
 
 *   **总结**: 在严重腐蚀场景（如雪、雾）下有显著提升，但在清晰图像上会有轻微的性能损失。
 
+#### 训练 Loss 曲线
+![Exp1 训练 Loss](./code/exp1/AdaIR/logs/AdaIR_CUBC/loss_curve_refined_zh.png)
+
 ---
 
 ## 2. 实验二：基于 Mamba 的特征增强
@@ -63,6 +66,9 @@
 | **Origin (Clean)** | 71.04% | 70.74% | -0.30% |
 
 *   **总结**: 平均在腐蚀数据集上带来了 **+11.70%** 的准确率提升，且在清晰图像上的性能损失极小 (-0.30%)，证明了 Mamba 模块的高效性与安全性。
+
+#### 训练 Loss 曲线
+![Exp2 训练 Loss](./checkpoints/exp2_MambaFeatureEnhancer_CUBC/logs/loss_curve_refined_zh.png)
 
 ---
 
@@ -96,3 +102,6 @@
 *   **总结**: 
     *   **视觉质量**: 清晰图像的重建 PSNR 达到 **28.86 dB** (SSIM 0.90)，证明了解码器具有很高的还原能力。
     *   **语义一致性**: 重建图像的分类准确率 (69.44%) 与原始图像 (71.04%) 非常接近，表明 Mamba 增强后的特征完整地保留了用于分类的关键语义信息。
+
+#### 训练 Loss 曲线
+![Exp3 训练 Loss](./checkpoints/exp3_Decoder_ImageNet/logs/loss_curve_refined_zh.png)
